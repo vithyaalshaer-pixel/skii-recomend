@@ -182,9 +182,11 @@ function renderCards(meta) {
           <div class="recommend-panel">
             <div class="panel-head">
               <strong>主要功能</strong>
-              <span class="panel-note">截图友好版式</span>
+              <span class="panel-note">可上滑查看全文</span>
             </div>
-            <p class="recommend-text">${escapeHtml(item.recommendationZh || "暂无推荐语")}</p>
+            <div class="recommend-scroll" data-scroll-panel>
+              <p class="recommend-text">${escapeHtml(item.recommendationZh || "暂无推荐语")}</p>
+            </div>
           </div>
         </article>
       `;
