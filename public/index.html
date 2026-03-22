@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub 日推荐 / 周推荐</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero-panel">
+        <div>
+          <p class="eyebrow">GITHUB RECOMMENDATIONS</p>
+          <h1 id="headline-title">GitHub AI 开源项目周推荐</h1>
+          <p id="headline-subtitle" class="headline-subtitle">按趋势 Star、活跃度与跨来源信号生成推荐，已全局排除 OpenClaw。</p>
+        </div>
+        <div class="hero-tools">
+          <div class="segmented" id="window-tabs">
+            <button data-window="1d" class="window-tab" type="button">日推荐</button>
+            <button data-window="7d" class="window-tab active" type="button">周推荐</button>
+          </div>
+          <button id="refresh-button" class="ghost-button" type="button">立即刷新</button>
+        </div>
+        <div class="status-strip">
+          <span id="status-headline">正在准备推荐数据…</span>
+          <span id="status-refresh">最近刷新：-</span>
+          <span id="status-next">下次刷新：-</span>
+        </div>
+      </header>
+
+      <main class="content-panel">
+        <div class="section-head">
+          <div>
+            <p class="section-label">RECOMMENDATION</p>
+            <h2 id="result-title">周推荐</h2>
+            <p id="result-note" class="section-note">-</p>
+          </div>
+          <div class="section-meta">
+            <span id="result-count">0 个项目</span>
+            <span id="result-meta">-</span>
+          </div>
+        </div>
+        <div id="results-list" class="results-list"></div>
+      </main>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
